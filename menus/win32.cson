@@ -225,6 +225,7 @@
   ]
   'atom-pane': [
     {type: 'separator'}
+    {label: '&New File', command: 'application:new-file'}
     {label: 'Split Up', command: 'pane:split-up-and-copy-active-item'}
     {label: 'Split Down', command: 'pane:split-down-and-copy-active-item'}
     {label: 'Split Left', command: 'pane:split-left-and-copy-active-item'}
