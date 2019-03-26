@@ -184,6 +184,8 @@
   'cmd-shift-l': 'editor:split-selections-into-lines'
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
+  'ctrl-shift-1': 'editor:add-cursor-above'
+  'ctrl-shift-2': 'editor:add-cursor-below'
 
   'cmd-alt-[': 'editor:fold-current-row'
   'cmd-alt-]': 'editor:unfold-current-row'

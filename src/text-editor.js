@@ -3355,6 +3355,20 @@ class TextEditor {
   addSelectionAbove () {
     return this.expandSelectionsBackward(selection => selection.addSelectionAbove())
   }
+  
+  // Extended: Set keyboard shortcut to duplicate cursor below current position
+  addCursorBelow(options = {}) {
+    if (!this.ensureWritable('addCursorBelow', options)) return
+    const { row, column } = this.getCursorBufferPosition()
+    this.addCursorAtBufferPosition([row + 1, column])
+  }
+    
+  // Extended: Set keyboard shortcut to duplicate cursor above current position
+  addCursorAbove(options = {}) {
+    if (!this.ensureWritable('addCursorAbove', options)) return
+    const { row, column } = this.getCursorBufferPosition()
+    this.addCursorAtBufferPosition([row - 1, column])    
+  }
 
   // Calls the given function with each selection, then merges selections
   expandSelectionsForward (fn) {

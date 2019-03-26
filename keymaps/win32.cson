@@ -64,6 +64,8 @@
   'ctrl-shift-down': 'core:move-down'
   'ctrl-alt-up': 'editor:add-selection-above'
   'ctrl-alt-down': 'editor:add-selection-below'
+  'ctrl-shift-1': 'editor:add-cursor-above'
+  'ctrl-shift-2': 'editor:add-cursor-below'
   'ctrl-=': 'window:increase-font-size'
   'ctrl-+': 'window:increase-font-size'
   'ctrl--': 'window:decrease-font-size'
