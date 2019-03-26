@@ -4,6 +4,7 @@
   'end': 'editor:move-to-end-of-screen-line'
   'shift-home': 'editor:select-to-first-character-of-line'
   'shift-end': 'editor:select-to-end-of-line'
+  'ctrl-i': 'editor:change-inside-parentheses'
 
 'atom-text-editor:not([mini])':
   # Atom Specific

@@ -169,6 +169,7 @@
       { label: 'Select to First &Character of Line', command: 'editor:select-to-first-character-of-line' }
       { label: 'Select to End of Wor&d', command: 'editor:select-to-end-of-word' }
       { label: 'Select to End of Lin&e', command: 'editor:select-to-end-of-line' }
+      { label: 'Select inside parentheses and delete', command: 'editor:change-inside-parentheses' }
     ]
   }
 

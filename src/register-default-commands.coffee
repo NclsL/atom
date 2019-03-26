@@ -148,6 +148,7 @@ module.exports = ({commandRegistry, commandInstaller, config, notificationManage
       'editor:select-to-beginning-of-next-paragraph': -> @selectToBeginningOfNextParagraph()
       'editor:select-to-beginning-of-previous-paragraph': -> @selectToBeginningOfPreviousParagraph()
       'editor:select-to-end-of-line': -> @selectToEndOfLine()
+      'editor:change-inside-parentheses': -> @changeInsideParentheses()
       'editor:select-to-beginning-of-line': -> @selectToBeginningOfLine()
       'editor:select-to-end-of-word': -> @selectToEndOfWord()
       'editor:select-to-beginning-of-word': -> @selectToBeginningOfWord()

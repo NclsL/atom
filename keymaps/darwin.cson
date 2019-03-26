@@ -127,6 +127,7 @@
   'ctrl-a': 'editor:move-to-first-character-of-line'
   'ctrl-e': 'editor:move-to-end-of-line'
   'ctrl-k': 'editor:cut-to-end-of-line'
+  'ctrl-i': 'editor:change-inside-parentheses'
 
   # Atom Specific
   'ctrl-shift-w': 'editor:select-word'
