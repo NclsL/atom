@@ -173,6 +173,8 @@
     submenu: [
       { label: 'Add Selection Above', command: 'editor:add-selection-above' }
       { label: 'Add Selection Below', command: 'editor:add-selection-below' }
+      { label: 'Add cursor above', command: 'editor:add-cursor-above' }
+      { label: 'Add cursor below', command: 'editor:add-cursor-below' }
       { label: 'Single Selection', command: 'editor:consolidate-selections'}
       { label: 'Split into Lines', command: 'editor:split-selections-into-lines'}
       { type: 'separator' }

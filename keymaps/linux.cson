@@ -130,6 +130,8 @@
   'ctrl-shift-d': 'editor:duplicate-lines'
   'alt-shift-up': 'editor:add-selection-above'
   'alt-shift-down': 'editor:add-selection-below'
+  'ctrl-shift-1': 'editor:add-cursor-above'
+  'ctrl-shift-2': 'editor:add-cursor-below'
 
   'ctrl-alt-[': 'editor:fold-current-row'
   'ctrl-alt-]': 'editor:unfold-current-row'

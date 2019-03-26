@@ -214,6 +214,8 @@ module.exports = ({commandRegistry, commandInstaller, config, notificationManage
         'editor:transpose': -> @transpose()
         'editor:upper-case': -> @upperCase()
         'editor:lower-case': -> @lowerCase()
+        'editor:add-cursor-below': -> @addCursorBelow()
+        'editor:add-cursor-above': -> @addCursorAbove()
       }
     ),
     false
@@ -234,6 +236,7 @@ module.exports = ({commandRegistry, commandInstaller, config, notificationManage
       'core:select-page-down': -> @selectPageDown()
       'editor:add-selection-below': -> @addSelectionBelow()
       'editor:add-selection-above': -> @addSelectionAbove()
+
       'editor:split-selections-into-lines': -> @splitSelectionsIntoLines()
       'editor:toggle-soft-tabs': -> @toggleSoftTabs()
       'editor:toggle-soft-wrap': -> @toggleSoftWrapped()
