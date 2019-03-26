@@ -9,3 +9,11 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+atom.commands.add 'atom-workspace',
+  'custom:insert-init': ->
+    editor = atom.workspace.getActiveTextEditor()
+    now = new Date()
+    filename = editor?.getTitle()
+    text = "#"+now.toString() + '\n#Ville Raukola\n#' + filename
+    editor.insertText(text)
