@@ -3555,7 +3555,6 @@ class TextEditor {
   changeInsideParentheses (options = {}) {
     if (!this.ensureWritable('changeInsideParentheses', options)) return
     const bufferRow = this.getCursorBufferPosition().row
-    //const leadingParentheses = new RegExp(`[(]`)
     const firstMatchIndex = this.buffer.lineForRow(bufferRow).indexOf('(')
     const secondMatchIndex = this.buffer.lineForRow(bufferRow).lastIndexOf(')')
     if (firstMatchIndex && secondMatchIndex) {
