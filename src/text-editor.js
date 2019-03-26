@@ -3550,6 +3550,19 @@ class TextEditor {
   //   * `replace` Call this {Function} with a {String} to replace the match.
   backwardsScanInBufferRange (regex, range, iterator) { return this.buffer.backwardsScanInRange(regex, range, iterator) }
 
+  // Essential: Finds matching outer parentheses and deletes text inside them
+  // Moves cursor inside parentheses
+  changeInsideParentheses (options = {}) {
+    if (!this.ensureWritable('changeInsideParentheses', options)) return
+    const bufferRow = this.getCursorBufferPosition().row
+    const firstMatchIndex = this.buffer.lineForRow(bufferRow).indexOf('(')
+    const secondMatchIndex = this.buffer.lineForRow(bufferRow).lastIndexOf(')')
+    if (firstMatchIndex && secondMatchIndex) {
+      this.setCursorBufferPosition([bufferRow, firstMatchIndex + 1])
+      this.buffer.delete([[bufferRow, firstMatchIndex + 1], [bufferRow, secondMatchIndex]])
+    }
+  }
+
   /*
   Section: Tab Behavior
   */
